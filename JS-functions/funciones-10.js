@@ -7,6 +7,6 @@ function vamosACenar(tipo) {
     }
     console.log('En el sushi');
     console.log('En el bar del pueblo');
-}
 
-console.log(vamosACenar(tipo));
+    return 
+}
