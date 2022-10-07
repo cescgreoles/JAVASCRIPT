@@ -23,9 +23,9 @@
 // y cambia el mensaje en la última vuelta a 'Dormido!'.
 
 
-for ( let index = 0 ; index < 11 ; index++); {
+for ( let index = 0 ; index <= 11 ; index++); {
 
-  
+  console.log(index);
 
 }
 
