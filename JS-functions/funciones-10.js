@@ -1,12 +1,28 @@
 
 
-function vamosACenar(tipo) {
+// function salimosACenar(tipo) {
 
-    if (tipo === 'sushi') {
-        console.log('Vamos a ir al sushi');
-    }
-    console.log('En el sushi');
-    console.log('En el bar del pueblo');
+//     if (tipo === 'Sushi') {
+//         console.log('Restaurante UnDecimo')
+//       }
+    
+//       console.log('Vamos con moto al sushi');
+//       console.log('Esta en la calle ' + tipo + ' terminado');
+//       console.log('---------');
+    
+//       return 'Restaurante de ' + tipo;
+//     };
+    
+//     const chocolateCake = hacerPastel('chocolate');
+//     console.log(chocolateCake);
+    
 
-    return 
+// Definición de la función 
+function nombreDeMiFuncion (argumentoQueRecibe){
+
+    console.log(('FUNCIONA MI FUNCION ANDA EL CARRO'));
+    console.log('argumentoQueRecibe', argumentoQueRecibe);
 }
+
+
+nombreDeMiFuncion(); 
