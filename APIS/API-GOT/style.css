@@ -1,0 +1,29 @@
+.general{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cards{
+
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+
+
+}
+
+.titulo{
+
+    background-color: brown;
+
+}
+.img{
+
+    
+    background-color: bisque;
+    width: 100px;
+    height: 100px;
+}
