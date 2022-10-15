@@ -1,7 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Gothic&family=Noto+Sans+Mono:wght@600&family=Roboto:wght@100&display=swap");
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Noto Sans Gothic", sans-serif;
+    font-family: "Noto Sans Mono", monospace;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+body {
+    background-image: url(https://images.pexels.com/photos/627930/pexels-photo-627930.jpeg?cs=srgb&dl=pexels-emma-henry-627930.jpg&fm=jpg);
 }
 
 .got {
@@ -14,11 +25,15 @@
     margin: 20px 0px;
 }
 
+.first-container {
+    width: 100%;
+}
+
 .cards {
     width: 23%;
     box-shadow: 0 0 10px black;
-    border-radius: 10px;
     overflow: hidden;
+    background-color: black;
     /* padding: 20px; */
 }
 
@@ -46,12 +61,18 @@ h1 {
     width: 100%;
     text-align: center;
     margin: 10px 0px;
+    padding: 50px;
+}
+
+.myform {
+    border-style: solid black;
 }
 
 .search {
     width: 100%;
     display: flex;
     justify-content: center;
+    padding: 50px;
 }
 
 .hidden {
