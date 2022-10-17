@@ -1,4 +1,4 @@
-fetch("https://pokeapi.co/api/v2/pokemon/?offset=20&limit=20")
+fetch("https://pokeapi.co/api/v2/pokemon/?offset=0&limit=20")
     .then((poke) => poke.json())
     .then((poke) => {
         paint(poke);
@@ -54,25 +54,48 @@ function paint(poke) {
     button$$.appendChild(imgButton);
 
     for (const pokemon of poke.results) {
+        fetch(pokemon.url)
+            .then((respons) => respons.json())
+            .then((respons) => {
+                pokemonInfo(respons);
+            });
+    }
+
+    function pokemonInfo(infoPokemon) {
         const divCard = document.createElement("div");
         divCard.className = "card";
         document.body.appendChild(divCard);
 
         const imgPoke = document.createElement("img");
         imgPoke.className = "card-image";
-        imgPoke.src = pokemon.url;
+        imgPoke.src = infoPokemon.sprites.front_default;
         document.body.appendChild(imgPoke);
 
         const h1Poke = document.createElement("h1");
         h1Poke.className = "card-title";
-        h1Poke.textContent = pokemon.name;
+        h1Poke.textContent = infoPokemon.name;
         document.body.appendChild(h1Poke);
+
+        const idNumber = document.createElement("id");
+        idNumber.className = "id";
+        idNumber.textContent = infoPokemon.id;
+        document.body.appendChild(idNumber);
+
+        /*infoPokemon.map(function(abilities){
+        const spanAbility = document.createElement("span");
+        spanAbility.className = "span";
+        spanAbility.textContent = abilities.name;
+
+       
+        document.body.appendChild(spanAbility); })*/
 
         divPokemons.appendChild(divCard);
         divCard.appendChild(h1Poke);
         divCard.appendChild(imgPoke);
+        divCard.appendChild(idNumber);
+        divCard.appendChild(spanAbility);
 
-        console.log(poke.results);
+        console.log(infoPokemon);
     }
 }
 
