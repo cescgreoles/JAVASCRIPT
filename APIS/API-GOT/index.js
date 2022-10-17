@@ -48,11 +48,13 @@ function pintar(characters) {
     got$$.innerHTML = "";
 
     const img1$ = document.createElement("img");
-
     const form$$ = document.createElement("form");
+
     form$$.className = "myform";
+
     const input$$ = document.createElement("input");
     const button$$ = document.createElement("button");
+
     button$$.textContent = "SEARCH YOUR CHARACTER";
     input$$.id = "searchTerm";
 

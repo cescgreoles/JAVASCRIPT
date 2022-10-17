@@ -1,0 +1,72 @@
+// function paint(pokemons) {
+// divPokemons.innerHTML = "";
+
+// for (const pokemon of pokemons) {
+// const imgPoke = document.createElement("img");
+// const h1Poke = document.createElement("h1");
+
+// imgPoke.className = "poke-image";
+// h1Poke.className = "title-h1";
+
+// imgPoke.src = pokemon.url;
+// h1Poke.textContent = pokemon.name;
+
+// document.body.appendChild(imgPoke);
+// document.body.appendChild(h1Poke);
+// imgPoke.appendChild(divPokemons);
+// h1Poke.appendChild(divPokemons);
+// }
+
+// }
+
+// -------------------------------------------------
+
+// const divHeader = document.createElement("div");
+// const divSearch = document.createElement("div");
+// const divPokemons = document.createElement("div");
+// const imgHeader = document.createElement("img");
+
+// divHeader.className = "title-container";
+// divSearch.className = "search-container";
+// divPokemons.className = "pokemons-container";
+// imgHeader.className = "title-image";
+
+// imgHeader.src =
+// "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1280px-International_Pok%C3%A9mon_logo.svg.png";
+
+// document.body.appendChild(divHeader);
+// divHeader.appendChild(imgHeader);
+// document.body.appendChild(divSearch);
+// document.body.appendChild(divPokemons);
+
+// fetch("https://pokeapi.co/api/v2/pokemon/?offset=20&limit=20")
+// .then((poke) => poke.json())
+// .then((poke) => {
+// function paint(poke);
+// });
+
+// function paint(poke) {
+// divPokemons.innerHTML = "";
+
+// for (const pokemon of poke) {
+// const imgPoke = document.createElement("img");
+// const h1Poke = document.createElement("h1");
+
+// imgPoke.className = "poke-image";
+// h1Poke.className = "title-h1";
+
+// imgPoke.src = pokemon.url;
+// h1Poke.textContent = pokemon.name;
+
+// document.body.appendChild(imgPoke);
+// document.body.appendChild(h1Poke);
+// imgPoke.appendChild(divPokemons);
+// h1Poke.appendChild(divPokemons);
+// }
+// }
+
+fetch("https://pokeapi.co/api/v2/pokemon/?offset=20&limit=20")
+.then((poke) => poke.json())
+.then((poke) => {
+paint(poke);
+});
