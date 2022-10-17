@@ -36,10 +36,11 @@ body {
     justify-content: center;
     width: 100%;
     padding: 25px 0px;
-    background-color: blue;
+    background-color: rgba(0, 132, 255, 0.925);
     border-bottom: 4px solid black;
     border-left: 4px solid black;
     border-right: 4px solid black;
+    color: black;
 }
 
 input {
@@ -50,7 +51,7 @@ input {
 }
 
 button {
-    background-color: blue;
+    background-color: rgba(0, 132, 255, 0.925);
     width: 34px;
     height: 34px;
     border: none;
