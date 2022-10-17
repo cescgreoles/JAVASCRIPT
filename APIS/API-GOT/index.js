@@ -57,7 +57,7 @@ function pintar(characters) {
     input$$.id = "searchTerm";
 
     form$$.onsubmit = (event) => onSearch(event, characters);
-    form$$.autocomplete = "off";
+
     form$$.appendChild(input$$);
     form$$.appendChild(button$$);
     divSearch.appendChild(form$$);
