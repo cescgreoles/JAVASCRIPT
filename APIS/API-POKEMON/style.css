@@ -19,6 +19,9 @@ body {
     justify-content: center;
     padding: 12px 0px;
     background-color: orangered;
+    border-top: 4px solid black;
+    border-left: 4px solid black;
+    border-right: 4px solid black;
 }
 
 .title-image {
@@ -55,7 +58,7 @@ input {
     border: 3px solid #000000;
     border-radius: 21px;
     height: 30px;
-    background-color: rgb(255, 255, 255);
+    background-color: #afddfe;
     text-align: center;
 }
 
@@ -79,6 +82,7 @@ form {
 }
 
 .pokemons-container {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -87,6 +91,9 @@ form {
     gap: 20px;
     padding: 20px 0px;
     background-color: #afddfe;
+    border-bottom: 4px solid black;
+    border-left: 4px solid black;
+    border-right: 4px solid black;
 }
 
 .card {
@@ -98,6 +105,7 @@ form {
     color: #222;
     text-align: center;
     border-radius: 35px;
+    border: 2px solid black;
 }
 .card-title {
     text-transform: uppercase;

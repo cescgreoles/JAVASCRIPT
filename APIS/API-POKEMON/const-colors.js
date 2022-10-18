@@ -20,3 +20,8 @@ const typeColors = {
     unknow: "#757575",
     shadow: "#29292c",
 };
+
+// for (const typeColor of typeColors) {
+//     const typeColor = span$$.texcontent;
+//     console.log(typeColors);
+// }
