@@ -1,10 +1,11 @@
-@import url("http://fonts.cdnfonts.com/css/pokemon-solid");
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: none;
-    font-family: "Pokemon Solid", sans-serif;
+    /* font-family: "Pokemon Solid", sans-serif; */
+    font-family: "Silkscreen", cursive;
 }
 
 body {
@@ -100,8 +101,8 @@ form {
     width: 23%;
     box-shadow: 0 0 10px black;
     overflow: hidden;
-    padding: 28px;
-    background-color: yellow;
+    padding: 18px;
+    background-color: gold;
     color: #222;
     text-align: center;
     border-radius: 35px;
@@ -137,6 +138,9 @@ form {
     height: 180px;
     display: flex;
     justify-content: flex-start;
+    background-color: black;
+    border-radius: 70px;
+    /* padding: 5px; */
 }
 #pokedex {
     padding-inline-start: 0;
@@ -161,12 +165,12 @@ form {
 }
 
 .span-abilities {
-    padding: 6px;
+    padding: 3px;
     border: 2px solid black;
 }
 
 .span-types {
-    padding: 6px;
+    padding: 2px;
     border: 2px solid black;
 }
 

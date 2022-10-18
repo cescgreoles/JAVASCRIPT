@@ -68,7 +68,6 @@ function paint(poke) {
     const imgButton = document.createElement("img");
 
     input$$.id = "searchTerm";
-
     form$$.onsubmit = (event) => onSearch(event);
 
     imgButton.src =
@@ -154,7 +153,7 @@ function pokemonInfo(infoPokemon) {
         divSpans$$.appendChild(span$$);
     }
 
-    console.log(infoPokemon);
+    // console.log(infoPokemon);
 }
 
 function onSearch(event) {
