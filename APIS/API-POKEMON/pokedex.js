@@ -50,7 +50,7 @@ document.body.appendChild(divSearch);
 divSearch.appendChild(h3Search);
 document.body.appendChild(divPokemons);
 
-fetch("https://pokeapi.co/api/v2/pokemon/?offset=0&limit=30")
+fetch("https://pokeapi.co/api/v2/pokemon/?offset=0&limit=80")
     .then((poke) => poke.json())
     .then((poke) => {
         paint(poke);
@@ -94,6 +94,7 @@ function paint(poke) {
 }
 
 const allPokemonsInfo = [];
+console.log(allPokemonsInfo);
 
 function pokemonInfo(infoPokemon) {
     allPokemonsInfo.push(infoPokemon);
@@ -137,7 +138,7 @@ function pokemonInfo(infoPokemon) {
 
     for (const ability of infoPokemon.abilities) {
         const span2$$ = document.createElement("span");
-        span2$$.textContent += ability.ability.name + " ";
+        span2$$.textContent += ability.ability.name;
         divSpans$$.appendChild(span2$$);
     }
 
@@ -148,12 +149,10 @@ function pokemonInfo(infoPokemon) {
 
     for (const type of infoPokemon.types) {
         const span$$ = document.createElement("span");
-        span$$.textContent += type.type.name + " ";
+        span$$.textContent += type.type.name;
         span$$.style.color = typeColors[type.type.name];
         divSpans$$.appendChild(span$$);
     }
-
-    // console.log(infoPokemon);
 }
 
 function onSearch(event) {
