@@ -1,0 +1,31 @@
+const alumnos = [
+    "Adolfo",
+    "Alberto",
+    "Alvaro Caruana",
+    "Alvaro Moreno",
+    "Alvaro Ruiz",
+    "Angélica",
+    "Carlota",
+    "Claudiu Adrian",
+    "Daniel",
+    "Diego",
+    "Edward",
+    "Florencia",
+    "Francesc",
+    "Guillermo",
+    "Jaime",
+    "Javier",
+    "Jerónimo",
+    "Jose Manuel",
+    "Luisfer",
+    "Mario Josue",
+    "Marta",
+    "Netfali",
+    "Raul Chaudhari",
+    "Raul Conde",
+    "Ricardo",
+    "Yago",
+];
+
+alumnos.sort(() => Math.random() - 0.5);
+console.log(alumnos);
